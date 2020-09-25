@@ -16,7 +16,7 @@ class _MovieScreenState extends State<MovieScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: ListView(
         children: [
           Stack(
@@ -45,7 +45,7 @@ class _MovieScreenState extends State<MovieScreen> {
                     onPressed: () => Navigator.pop(context),
                     icon: Icon(Icons.arrow_back),
                     iconSize: 25.0,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                   Image(
                     image: AssetImage('gambar/images/netflix_logo.png'),
@@ -57,7 +57,7 @@ class _MovieScreenState extends State<MovieScreen> {
                     onPressed: () => Navigator.pop(context),
                     icon: Icon(Icons.favorite_border),
                     iconSize: 25.0,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 ],
               ),
@@ -110,8 +110,10 @@ class _MovieScreenState extends State<MovieScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
+                  
                   widget.movie.title.toUpperCase(),
                   style: TextStyle(
+                    color: Colors.white,
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -123,7 +125,7 @@ class _MovieScreenState extends State<MovieScreen> {
                 Text(
                   widget.movie.categories,
                   style: TextStyle(
-                    color: Colors.black54,
+                    color: Colors.white54,
                     fontSize: 16.0,
                   ),
                 ),
@@ -147,7 +149,7 @@ class _MovieScreenState extends State<MovieScreen> {
                         Text(
                           'Tahun',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white54,
                             fontSize: 16.0,
                           ),
                         ),
@@ -157,6 +159,7 @@ class _MovieScreenState extends State<MovieScreen> {
                         Text(
                           widget.movie.year.toString(),
                           style: TextStyle(
+                            color: Colors.white,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -168,7 +171,7 @@ class _MovieScreenState extends State<MovieScreen> {
                         Text(
                           'Negara',
                           style: TextStyle(
-                            color: Colors.black54,
+                            color: Colors.white54,
                             fontSize: 16.0,
                           ),
                         ),
@@ -178,6 +181,7 @@ class _MovieScreenState extends State<MovieScreen> {
                         Text(
                           widget.movie.country.toUpperCase(),
                           style: TextStyle(
+                            color: Colors.white,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -189,7 +193,7 @@ class _MovieScreenState extends State<MovieScreen> {
                         Text(
                           'Durasi',
                           style: TextStyle(
-                            color: Colors.black54,
+                            color: Colors.white54,
                             fontSize: 16.0,
                           ),
                         ),
@@ -199,6 +203,7 @@ class _MovieScreenState extends State<MovieScreen> {
                         Text(
                           '${widget.movie.length} min',
                           style: TextStyle(
+                            color: Colors.white,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -216,7 +221,7 @@ class _MovieScreenState extends State<MovieScreen> {
                     child: Text(
                       widget.movie.description,
                       style: TextStyle(
-                        color: Colors.black54,
+                        color: Colors.white,
                       ),
                     ),
                   ),

@@ -28,7 +28,7 @@ final List<Movie> movies = [
     year: 2018,
     country: 'USA',
     length: 129,
-    description: 'ini spiderman',
+    description: 'Peter Parker (Tom Holland) tengah mengunjungi Eropa untuk liburan panjang bersama temaan-temanya. Sayangnya , Parker tidak bisa dengan tenang menikmati liburannya, karena Nick Fury datang secara tiba-tiba di kamar hotelnya. Selama di Eropa pun Peter harus menghadapi banyak musuh mulai dari Hydro Man, Sandman dan Molten Man.',
     screenshot: [
       'gambar/images/spiderman_0.jpg',
       'gambar/images/spiderman_1.jpg',
@@ -55,7 +55,7 @@ final List<Movie> movies = [
     year: 2019,
     country: 'USA',
     length: 100,
-    description: 'ini toy story',
+    description: 'Woody selalu merasa percaya diri akan posisinya di dunia, dan prioritasnya adalah menjaga anaknya, baik itu Andy atau Bonnie. Namun ketika Bonnie menambahkan sebuah mainan baru bernama Forky dalam kamar mainannya, sebuah pengembaraan bersama teman-teman lama dan baru akan membawa Woody untuk menyaksikan betapa besarnya dunia ini bagi sebuah mainan seperti dirinya.',
     screenshot: [
       'gambar/images/toystory_0.jpg',
       'gambar/images/toystory_1.jpg',
@@ -69,7 +69,7 @@ final List<Movie> movies = [
     year: 2020,
     country: 'Rusia',
     length: 125,
-    description: 'ini The Old Guard',
+    description: 'mengisahkan tentang sekelompok prajurit bayaran rahasia yang memiliki kemampuan untuk hidup abadi. Mereka bertugas untuk melindungi dunia selama berabad-abad lamanya. Para prajurit bayaran ini dipimpin oleh seorang prajurit perempuan bernama Andy (Charlize Theron).',
     screenshot: [
       'gambar/images/theguard_1.jpg',
       'gambar/images/theguard_2.jpg',

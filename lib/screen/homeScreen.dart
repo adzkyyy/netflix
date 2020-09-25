@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
   PageController _pageController;
-
+  
   @override
   void initState() {
     // TODO: implement initState
@@ -101,7 +101,20 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.only(bottom: 20.0),
+          children: [
+            DrawerHeader(
+              child: Text('assg') ,
+              decoration: BoxDecoration(
+                color: Colors.black
+              ),
+            ),
+          ]
+        ),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
@@ -112,20 +125,15 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 130,
           ),
         ),
-        leading: IconButton(
-          padding: EdgeInsets.only(left: 0.0),
-          onPressed: () => print('Menu'),
-          icon: Icon(Icons.menu),
-          iconSize: 25.0,
-          color: Colors.black,
-        ),
+
         actions: <Widget> [
           IconButton(
           padding: EdgeInsets.only(right: 10.0),
           onPressed: () => print('Search'),
           icon: Icon(Icons.search),
           iconSize: 25.0,
-          color: Colors.black,)
+          color: Colors.white,
+          ),
         ],
       ),
       body: ListView(
@@ -156,7 +164,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
                     gradient: LinearGradient(
-                      begin: Alignment.topCenter,
+                      begin: Alignment.topRight,
+                      end: Alignment.bottomLeft,
                       colors: [
                         Color(0xFFD45253),
                         Color(0xFF9E1F28),
@@ -197,7 +206,7 @@ class _HomeScreenState extends State<HomeScreen> {
            imageWidth: 150.0,
           ),
           SizedBox(
-            height: 10.0,
+            height: 15.0,
           ),
            ContentScroll(
            images: popular,

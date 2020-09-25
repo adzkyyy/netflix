@@ -26,6 +26,7 @@ class ContentScroll extends StatelessWidget {
               Text(
                 title,
                 style: TextStyle(
+                  color: Colors.white,
                   fontSize: 15.0,
                   fontWeight: FontWeight.w600,
                 ),
@@ -34,7 +35,7 @@ class ContentScroll extends StatelessWidget {
                 onTap: () => print('View $title'),
                 child: Icon(
                   Icons.arrow_forward,
-                  color: Colors.black,
+                  color: Colors.white,
                   size: 25.0,
                 ),
               )
