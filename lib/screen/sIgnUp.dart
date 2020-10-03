@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:lit_firebase_auth/lit_firebase_auth.dart';
 import 'package:netflix/models/loginTitle.dart';
 import 'package:netflix/models/styleTextField.dart';
-import 'package:netflix/widget/bgColor.dart';
 import 'package:netflix/widget/indicatorSign.dart';
 
 class SignUp extends StatelessWidget {
