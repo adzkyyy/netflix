@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lit_firebase_auth/lit_firebase_auth.dart';
-import 'package:netflix/screen/loginScreen.dart';
+import 'package:netflix/widget/animLoginLogout.dart';
 
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return LitAuthInit(
           child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: LoginScreen(),
+        home: const AnimLoginLogout(),
       ),
     );
   }

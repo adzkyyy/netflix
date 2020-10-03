@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:netflix/screen/loginScreen.dart';
 import 'package:netflix/screen/movieScreen.dart';
 import 'package:netflix/models/movieModels.dart';
 import 'package:netflix/widget/content_scroll.dart';
+import 'package:lit_firebase_auth/lit_firebase_auth.dart';
 
 class HomeScreen extends StatefulWidget {
+
+  static MaterialPageRoute get route => MaterialPageRoute(builder: (context) => HomeScreen(),);
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -128,7 +133,10 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: <Widget> [
           IconButton(
           padding: EdgeInsets.only(right: 10.0),
-          onPressed: () => print('Search'),
+          onPressed: () => {
+            context.signOut(),
+            Navigator.of(context).push(LoginScreen.route),
+          },
           icon: Icon(Icons.search),
           iconSize: 25.0,
           color: Colors.white,

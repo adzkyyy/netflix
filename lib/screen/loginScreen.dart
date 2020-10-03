@@ -2,12 +2,15 @@ import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:lit_firebase_auth/lit_firebase_auth.dart';
 import 'package:netflix/backgound/loginBackground.dart';
+import 'package:netflix/screen/homeScreen.dart';
 import 'package:netflix/screen/sIgnUp.dart';
 import 'package:netflix/screen/signIn.dart';
 
 class LoginScreen extends StatefulWidget {
 
   const LoginScreen ({Key key}): super(key: key);
+
+  static MaterialPageRoute get route => MaterialPageRoute(builder: (context) => LoginScreen(),);
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -36,6 +39,9 @@ class _LoginScreenState extends State<LoginScreen>
     return Scaffold(
       backgroundColor: Colors.white ,
       body: LitAuth.custom(
+        onAuthSuccess: (){
+          Navigator.of(context).pushReplacement(HomeScreen.route);
+        },
         child: Stack(
           children: [
             SizedBox.expand(
@@ -59,7 +65,8 @@ class _LoginScreenState extends State<LoginScreen>
                         transitionBuilder: (child, animation, secondaryAnimation){
                           return SharedAxisTransition(
                             animation: animation, 
-                            secondaryAnimation: secondaryAnimation, transitionType: SharedAxisTransitionType.vertical,
+                            secondaryAnimation: secondaryAnimation, 
+                            transitionType: SharedAxisTransitionType.vertical,
                             fillColor: Colors.transparent,
                             child: child,
                           );
