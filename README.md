@@ -1,4 +1,5 @@
 # Netflix
+<p align="center"><a href="https://www.netflix.com/" target="_blank"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" width="400"></a></p>
 
 Netflix, Inc. is an American pay television over-the-top media service and original programming production company. It offers subscription-based video on demand from a library of films and television series, 40% of which is Netflix original programming produced in-house.
 
