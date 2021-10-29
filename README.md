@@ -1,6 +1,6 @@
-# netflix
+# Netflix
 
-A new Flutter project.
+Netflix, Inc. is an American pay television over-the-top media service and original programming production company. It offers subscription-based video on demand from a library of films and television series, 40% of which is Netflix original programming produced in-house.
 
 ## Getting Started
 
